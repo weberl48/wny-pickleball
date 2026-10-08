@@ -1,0 +1,702 @@
+[
+ {
+  "v": "VG",
+  "wd": 0,
+  "s": "08:00",
+  "e": "11:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 0,
+  "s": "08:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 0,
+  "s": "11:00",
+  "e": "14:00",
+  "t": "Open Play 3.0",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 0,
+  "s": "11:00",
+  "e": "13:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 0,
+  "s": "13:00",
+  "e": "16:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 0,
+  "s": "15:00",
+  "e": "17:30",
+  "t": "Ladies Only Open Play",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 0,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play 3.5",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 0,
+  "s": "17:30",
+  "e": "18:30",
+  "t": "Beginner Instruction",
+  "k": "learn",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "PI",
+  "wd": 0,
+  "s": "18:30",
+  "e": "21:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 0,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play 4.0+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "08:00",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 1,
+  "s": "08:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "10:00",
+  "e": "11:30",
+  "t": "Drills for Skills",
+  "k": "learn",
+  "n": "$41.00 non-member / $31.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "11:00",
+  "e": "14:00",
+  "t": "Open Play 3.0+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "11:00",
+  "e": "13:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 1,
+  "s": "11:30",
+  "e": "12:30",
+  "t": "Beginner Instruction",
+  "k": "learn",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "11:30",
+  "e": "13:00",
+  "t": "Drills for Skills",
+  "k": "learn",
+  "n": "$41.00 non-member / $31.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 1,
+  "s": "12:30",
+  "e": "15:00",
+  "t": "Split: 3.5+ Open Play / Rec 2.5–3.0",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "14:30",
+  "e": "17:30",
+  "t": "Open Play Ladies",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 1,
+  "s": "18:00",
+  "e": "21:00",
+  "t": "Silly Pickles League",
+  "k": "league",
+  "n": "Signup required",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 1,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 2,
+  "s": "06:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "08:00",
+  "e": "11:00",
+  "t": "Open Play 3.5",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "11:00",
+  "e": "14:00",
+  "t": "Open Play 3.0",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "11:00",
+  "e": "13:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "13:00",
+  "e": "16:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 2,
+  "s": "15:00",
+  "e": "17:30",
+  "t": "Ladies Only Open Play",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play 3.5",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 2,
+  "s": "17:30",
+  "e": "18:30",
+  "t": "Beginner Instruction",
+  "k": "learn",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "PI",
+  "wd": 2,
+  "s": "18:30",
+  "e": "21:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play 3.0",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 2,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play 4.0+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "08:00",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 3,
+  "s": "08:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "10:00",
+  "e": "13:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "11:00",
+  "e": "12:30",
+  "t": "Drills 3.0-3.5",
+  "k": "learn",
+  "n": "$41.00 non-member / $31.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 3,
+  "s": "12:30",
+  "e": "15:00",
+  "t": "Split: 3.5+ Open Play / Rec 2.5–3.0",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "15:00",
+  "e": "18:00",
+  "t": "Open Play Ladies",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 3,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play 4.0+",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "19:00",
+  "e": "22:00",
+  "t": "Open Play 4.0",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 3,
+  "s": "19:30",
+  "e": "22:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 4,
+  "s": "08:00",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 4,
+  "s": "08:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 4,
+  "s": "09:30",
+  "e": "11:00",
+  "t": "Clinic Newbie",
+  "k": "learn",
+  "n": "$41.00 non-member / $31.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 4,
+  "s": "11:00",
+  "e": "13:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 4,
+  "s": "13:00",
+  "e": "16:00",
+  "t": "Open Play Seniors",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 4,
+  "s": "15:00",
+  "e": "17:30",
+  "t": "Ladies Only Open Play",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 4,
+  "s": "16:30",
+  "e": "18:00",
+  "t": "Drills 3.5",
+  "k": "learn",
+  "n": "$41.00 non-member / $31.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 4,
+  "s": "18:00",
+  "e": "22:00",
+  "t": "Ladder League",
+  "k": "league",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 4,
+  "s": "18:00",
+  "e": "21:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 5,
+  "s": "07:00",
+  "e": "10:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 5,
+  "s": "08:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 5,
+  "s": "10:00",
+  "e": "13:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 5,
+  "s": "11:30",
+  "e": "14:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 5,
+  "s": "13:00",
+  "e": "16:00",
+  "t": "Open Play 3.0",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 5,
+  "s": "14:30",
+  "e": "16:30",
+  "t": "Split: Beginner Instruction / Rec 2.5–3.0",
+  "k": "learn",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 5,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 5,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 6,
+  "s": "07:00",
+  "e": "10:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 6,
+  "s": "08:30",
+  "e": "11:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 6,
+  "s": "10:00",
+  "e": "13:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 6,
+  "s": "12:30",
+  "e": "15:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$12 drop-in · canceled on Bills 1pm game days",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 6,
+  "s": "13:00",
+  "e": "16:00",
+  "t": "Open Play 3.0",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 6,
+  "s": "13:00",
+  "e": "16:00",
+  "t": "Open Play 3.5",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "PI",
+  "wd": 6,
+  "s": "15:30",
+  "e": "18:00",
+  "t": "Open Play 3.5+",
+  "k": "open",
+  "n": "$12 drop-in · moves to 4:30–7pm on Bills 1pm game days",
+  "u": "https://www.pickleballisland.com/schedule-2"
+ },
+ {
+  "v": "VG",
+  "wd": 6,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play All Levels",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ },
+ {
+  "v": "VG",
+  "wd": 6,
+  "s": "16:00",
+  "e": "19:00",
+  "t": "Open Play Newbie",
+  "k": "open",
+  "n": "$15.00 non-member / $9.00 member",
+  "u": "https://vgtc.clubautomation.com/"
+ }
+]

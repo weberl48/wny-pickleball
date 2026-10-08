@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WNY Pickleball — shared schedule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F8;--panel:#FFFFFF;--ink:#16243A;--muted:#5A6A80;--rule:#D9E1EA;
+  --court:#1D3F6E;--line:#FFFFFF;--ball:#D8E83A;
+  --pf:#2E6FD8;--pi:#178E62;--vg:#B03F86;
+  --pf-bg:#E8F0FC;--pi-bg:#E4F4ED;--vg-bg:#F8E8F2;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1724;--panel:#172235;--ink:#E7EDF5;--muted:#9AAAC0;--rule:#26354D;--court:#13294A;
+  --pf:#6EA0F0;--pi:#4CC79A;--vg:#E07CBC;--pf-bg:#1B2C49;--pi-bg:#163A31;--vg-bg:#3A2036;}}
+:root[data-theme="dark"]{--bg:#0F1724;--panel:#172235;--ink:#E7EDF5;--muted:#9AAAC0;--rule:#26354D;--court:#13294A;
+  --pf:#6EA0F0;--pi:#4CC79A;--vg:#E07CBC;--pf-bg:#1B2C49;--pi-bg:#163A31;--vg-bg:#3A2036;}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.45 var(--body)}
+header.court{background:var(--court);color:#fff;position:relative;overflow:hidden}
+header.court svg.lines{position:absolute;inset:0;width:100%;height:100%;opacity:.22;pointer-events:none}
+.wrap{max-width:1320px;margin:0 auto;padding:0 20px}
+.hero{position:relative;padding:28px 0 22px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+h1{font:700 clamp(36px,6vw,64px)/.92 var(--display);margin:0;letter-spacing:.01em}
+.sub{margin:8px 0 0;color:#C9D6E8;max-width:56ch}
+.weeknav{display:flex;align-items:center;gap:10px}
+.weeknav .range{font:600 22px/1 var(--display);min-width:9.5em;text-align:center}
+button{font:inherit;cursor:pointer}
+.navbtn{background:transparent;border:2px solid rgba(255,255,255,.55);color:#fff;border-radius:999px;width:40px;height:40px;font-size:20px;line-height:1}
+.navbtn:disabled{opacity:.3;cursor:default}
+.navbtn:focus-visible,.chip:focus-visible,.ev:focus-visible,input:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:16px 0 4px}
+.group{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--rule);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 13px;font-weight:500;display:inline-flex;align-items:center;gap:7px}
+.chip .dot{width:10px;height:10px;border-radius:50%}
+.chip[aria-pressed="false"]{opacity:.45;text-decoration:line-through}
+.chip.v[aria-pressed="true"]{border-color:currentColor}
+.chip.PF{color:var(--pf)}.chip.PI{color:var(--pi)}.chip.VG{color:var(--vg)}
+.chip.v span.lbl{color:var(--ink)}
+.dot.PF{background:var(--pf)}.dot.PI{background:var(--pi)}.dot.VG{background:var(--vg)}
+input[type=search]{border:1.5px solid var(--rule);background:var(--panel);color:var(--ink);border-radius:999px;padding:7px 14px;font:inherit;min-width:220px;flex:1;max-width:320px}
+.count{color:var(--muted);font-size:14px;margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;padding:14px 0 40px}
+.day{background:var(--panel);border:1px solid var(--rule);border-radius:10px;min-width:0;display:flex;flex-direction:column}
+.dayhead{padding:10px 12px 8px;border-bottom:1px solid var(--rule);display:flex;align-items:baseline;gap:8px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--panel);border-radius:10px 10px 0 0;z-index:1}
+.dayhead .dow{font:700 20px/1 var(--display)}
+.dayhead .dt{color:var(--muted);font:500 16px/1 var(--display)}
+.day.today .dayhead{box-shadow:inset 0 -4px 0 var(--ball)}
+.list{padding:8px;display:flex;flex-direction:column;gap:6px}
+.empty{color:var(--muted);font-size:13px;padding:6px 4px}
+.ev{all:unset;display:block;cursor:pointer;border-radius:6px;padding:7px 9px 7px 10px;border-left:4px solid;line-height:1.3}
+.ev.PF{background:var(--pf-bg);border-color:var(--pf)}.ev.PI{background:var(--pi-bg);border-color:var(--pi)}.ev.VG{background:var(--vg-bg);border-color:var(--vg)}
+.ev .tm{font:600 15px/1.1 var(--display);letter-spacing:.01em}
+.ev .ti{font-weight:600;font-size:14px}
+.ev .ve{font-size:12px;color:var(--muted)}
+.ev .more{display:none;font-size:12.5px;margin-top:5px;color:var(--ink)}
+.ev .more a{color:inherit}
+.ev[aria-expanded="true"] .more{display:block}
+.ev .tag{display:inline-block;font-size:11px;font-weight:600;color:var(--muted);margin-left:4px}
+footer{color:var(--muted);font-size:13px;padding:0 0 40px;max-width:80ch}
+footer a{color:inherit}
+@media (max-width:980px){
+  .grid{grid-template-columns:1fr;gap:12px}
+  .day.past{display:none}
+}
+@media (prefers-reduced-motion:no-preference){.ev{transition:filter .12s}.ev:hover{filter:brightness(.97)}}
+</style>
+</head>
+<body>
+<header class="court">
+  <svg class="lines" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#fff" stroke-width="3">
+      <rect x="40" y="20" width="920" height="180"/>
+      <line x1="500" y1="10" x2="500" y2="210" stroke-dasharray="6 6"/>
+      <line x1="400" y1="20" x2="400" y2="200"/><line x1="600" y1="20" x2="600" y2="200"/>
+      <line x1="40" y1="110" x2="400" y2="110"/><line x1="600" y1="110" x2="960" y2="110"/>
+    </g>
+  </svg>
+  <div class="wrap hero">
+    <div>
+      <h1>WNY Pickleball</h1>
+      <p class="sub">PickFit, Pickleball Island and Village Glen on one calendar. Tap a session for prices and booking.</p>
+    </div>
+    <div class="weeknav">
+      <button class="navbtn" id="prev" aria-label="Previous week">‹</button>
+      <div class="range" id="range" aria-live="polite"></div>
+      <button class="navbtn" id="next" aria-label="Next week">›</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="controls">
+    <div class="group" id="venues" role="group" aria-label="Venues"></div>
+    <div class="group" id="kinds" role="group" aria-label="Session types"></div>
+    <input type="search" id="q" placeholder="Filter by level or name, e.g. 3.5" aria-label="Filter sessions">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <footer>
+    Pulled Oct 5, 2026 from each club's own schedule: PickFit's live calendar, Village Glen's booking system (spot counts are from that day), and Pickleball Island's posted Fall 2026 weekly schedule.
+    Clubs change things, so confirm before you drive over —
+    <a href="https://www.pickfitbuffalo.com/schedule" target="_blank" rel="noopener">PickFit</a>,
+    <a href="https://www.pickleballisland.com/schedule-2" target="_blank" rel="noopener">Pickleball Island</a>,
+    <a href="https://wnytennis.com/vg-calendar/" target="_blank" rel="noopener">Village Glen</a>.
+  </footer>
+</main>
+<script>
+const EV=/*EV*/[];
+const VENUE={PF:{n:"PickFit",a:"225 Fire Tower Dr, Tonawanda"},PI:{n:"Pickleball Island",a:"401 Lang Blvd, Grand Island"},VG:{n:"Village Glen",a:"162 Mill St, Williamsville"}};
+const KIND={open:"Open play",learn:"Lessons & clinics",league:"Leagues & events"};
+const FIRST=new Date(/*FIRST*/2026,9,5), WEEKS=/*WEEKS*/6;
+const state={w:0,v:{PF:true,PI:true,VG:true},k:{open:true,learn:true,league:true},q:""};
+const pad=n=>String(n).padStart(2,"0");
+const iso=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const fmt=t=>{let[h,m]=t.split(":").map(Number);const ap=h>=12?"pm":"am";h=h%12||12;return m?`${h}:${pad(m)}`+ap:`${h}`+ap};
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const today=new Date();const todayIso=iso(today);
+// open on the week containing today if within range
+{const diff=Math.floor((new Date(today.getFullYear(),today.getMonth(),today.getDate())-FIRST)/864e5/7);if(diff>=0&&diff<WEEKS)state.w=diff;}
+function chips(){
+  const vh=Object.entries(VENUE).map(([k,v])=>`<button class="chip v ${k}" data-v="${k}" aria-pressed="${state.v[k]}"><span class="dot ${k}"></span><span class="lbl">${v.n}</span></button>`).join("");
+  document.getElementById("venues").innerHTML=vh;
+  document.getElementById("kinds").innerHTML=Object.entries(KIND).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${state.k[k]}">${v}</button>`).join("");
+}
+function render(){
+  const start=new Date(FIRST);start.setDate(start.getDate()+state.w*7);
+  const end=new Date(start);end.setDate(end.getDate()+6);
+  const mo=d=>d.toLocaleDateString("en-US",{month:"short",day:"numeric"});
+  document.getElementById("range").textContent=`${mo(start)} – ${mo(end)}`;
+  document.getElementById("prev").disabled=state.w===0;
+  document.getElementById("next").disabled=state.w===WEEKS-1;
+  const q=state.q.trim().toLowerCase();
+  let html="",shown=0;
+  for(let i=0;i<7;i++){
+    const d=new Date(start);d.setDate(d.getDate()+i);const di=iso(d);
+    const items=EV.filter(e=>e.d===di&&state.v[e.v]&&state.k[e.k]&&(!q||(e.t+" "+VENUE[e.v].n).toLowerCase().includes(q)));
+    shown+=items.length;
+    const cls=["day"];if(di===todayIso)cls.push("today");if(di<todayIso)cls.push("past");
+    html+=`<section class="${cls.join(" ")}" aria-label="${d.toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric"})}"><div class="dayhead"><span class="dow">${d.toLocaleDateString("en-US",{weekday:"short"})}</span><span class="dt">${mo(d)}</span></div><div class="list">`;
+    html+=items.length?items.map((e,j)=>`<button class="ev ${e.v}" aria-expanded="false"><div class="tm">${fmt(e.s)}–${fmt(e.e)}</div><div class="ti">${esc(e.t)}</div><div class="ve">${VENUE[e.v].n}</div><div class="more">${e.n?esc(e.n)+"<br>":""}${VENUE[e.v].a}<br><a href="${e.u}" target="_blank" rel="noopener">${e.v==="VG"?"Book at Village Glen":e.v==="PF"?"Details & reserve":"Club schedule"}</a></div></button>`).join(""):`<div class="empty">Nothing matches on this day.</div>`;
+    html+=`</div></section>`;
+  }
+  document.getElementById("grid").innerHTML=html;
+  document.getElementById("count").textContent=`${shown} sessions this week`;
+}
+document.addEventListener("click",e=>{
+  const c=e.target.closest(".chip");
+  if(c){if(c.dataset.v)state.v[c.dataset.v]=!state.v[c.dataset.v];else state.k[c.dataset.k]=!state.k[c.dataset.k];c.setAttribute("aria-pressed",c.dataset.v?state.v[c.dataset.v]:state.k[c.dataset.k]);save();render();return;}
+  if(e.target.closest("a"))return;
+  const ev=e.target.closest(".ev");if(ev)ev.setAttribute("aria-expanded",ev.getAttribute("aria-expanded")==="true"?"false":"true");
+});
+document.getElementById("prev").onclick=()=>{state.w=Math.max(0,state.w-1);render()};
+document.getElementById("next").onclick=()=>{state.w=Math.min(WEEKS-1,state.w+1);render()};
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render()});
+function save(){try{localStorage.setItem("wnypb",JSON.stringify({v:state.v,k:state.k}))}catch(_){}}
+try{const s=JSON.parse(localStorage.getItem("wnypb")||"null");if(s){Object.assign(state.v,s.v||{});Object.assign(state.k,s.k||{})}}catch(_){}
+chips();render();
+</script>
+</body>
+</html>
